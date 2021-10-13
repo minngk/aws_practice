@@ -1,0 +1,4 @@
+mysql -h database-1.xxx.ap-northeast-1.rds.amazonaws.com  -u admin -p
+sudo docker login
+sudo docker pull mirainagaoka/practice-django
+sudo docker run -it -p 8000:8000 -e dbhost=database-1.xxx.ap-northeast-1.rds.amazonaws.com mirainagaoka/practice-django
